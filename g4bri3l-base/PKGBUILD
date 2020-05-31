@@ -1,0 +1,36 @@
+pkgname=g4bri3l-base
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Base installation"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	pacman-contrib
+	base-devel
+	dhcpd
+	xdg-user-dirs
+	wget
+	arandr
+	dosfstools
+	exfat-utils
+	git
+	gnome-keyring
+	neovim
+	man-db
+	ntfs-3g
+	socat
+	tmux
+	unrar
+	unzip
+	highlight
+	xorg-xbacklight
+	zsh
+	zsh-fast-syntax-highlighting
+	simple-mtpfs-git
+	yay
+	)
+
+post_install() {
+
+}
