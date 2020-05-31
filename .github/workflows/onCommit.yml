@@ -1,0 +1,29 @@
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  update:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+      - name: Make all
+        uses: g4bri3lDev/arch-make-action@v1
+      - name: push to webserver
+        uses: isthatcentered/dist-to-ftp@v1
+        with:
+          # Ftp user
+          user: ${{ secrets.FTP_USER }}
+          # Ftp password
+          password: ${{ secrets.FTP_PASSWORD }}
+          # FTP host url
+          host: ${{ secrets.FTP_HOST }}
+          # Path to your build folder (usually ./dist or ./public)
+          path: ./public
+          # Where to place the files in your ftp
+          into: .
+          # Remove existing file inside FTP destination folder
+          cleanupExisting: true
