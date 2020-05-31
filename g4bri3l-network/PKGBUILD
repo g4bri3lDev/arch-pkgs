@@ -1,0 +1,18 @@
+pkgname=g4bri3l-network
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Additional networking packages"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	g4bri3l-base
+	networkmanager
+	networkmanager-openconnect
+	networkmanager-openvpn
+	networkmanager-pptp
+	networkmanager-vpnc
+	network-manager-applet
+	strongswan
+	wpa_supplicant
+)

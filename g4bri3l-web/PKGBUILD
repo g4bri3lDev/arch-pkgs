@@ -1,0 +1,13 @@
+pkgname=g4bri3l-web
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Additional web packages"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	g4bri3l-base
+	g4bri3l-network
+	google-chrome
+)
+

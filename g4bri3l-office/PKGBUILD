@@ -1,0 +1,17 @@
+pkgname=g4bri3l-office
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Additional office packages"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	g4bri3l-base
+	sxiv
+	maim
+	zathura
+	zathura-pdf-mupdf
+	poppler
+	sc-im
+	xournalpp
+)

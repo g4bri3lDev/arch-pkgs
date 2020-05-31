@@ -1,0 +1,27 @@
+pkgname=g4bri3l-x
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Additional Packages for X and Window Manager"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	g4bri3l-base
+	xorg-server
+	xorg-server-devel
+	xorg-xwinfo
+	xorg-xinit
+	xorg-xprop
+	xorg-xdpyinfo
+	xcompmgr
+	slock
+	arandr
+	xwallpaper
+	xclip
+	xdotool
+	unclutter
+	gtk-theme-arc-gruvbox-git
+	dunst
+	libnotify
+)
+

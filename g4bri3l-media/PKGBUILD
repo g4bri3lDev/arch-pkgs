@@ -1,0 +1,22 @@
+pkgname=g4bri3l-media
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Additional media packages"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	pulseaudio-alsa
+	pulsemixer
+	pamixer
+	ffmpeg
+	mpd
+	mpc
+	mpv
+	ncmpcpp
+	youtube-dl
+	mediainfo
+	cava
+	spotify
+	spicetify-cli
+)
