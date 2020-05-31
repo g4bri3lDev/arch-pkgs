@@ -17,3 +17,6 @@ clean::
 	rm -rf **/*.tar.xz
 	rm -rf **/src
 	rm -rf **/pkg
+	rm -rf **/dmenu
+	rm -rf **/dwm
+	rm -rf **/st

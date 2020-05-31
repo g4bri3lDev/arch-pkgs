@@ -1,0 +1,28 @@
+pkgname=g4bri3l-dmenu
+pkgver=1.0
+pkgrel=1
+pkgdesc="my build of dmenu"
+arch=('any')
+url="https://github.com/g4bri3lDev/dmenu"
+license=('MIT')
+depends=(
+	freetype2
+	libxft
+	libxinerama
+)
+makedepends=('git')
+provides=('dmenu')
+conflicts=('dmenu')
+source=("git+https://github.com/g4bri3lDev/dmenu")
+sha256sums=("SKIP")
+
+build() {
+	cd dmenu
+	make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
+}
+package() {
+	cd dmenu
+	mkdir -p ${pkgdir}/opt/${pkgname}
+	cp -rf * ${pkgdir}/opt/${pkgname}
+	make PREFIX=/usr DESTDIR="${pkgdir}" install
+}
