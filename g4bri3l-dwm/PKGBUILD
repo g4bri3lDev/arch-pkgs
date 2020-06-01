@@ -1,0 +1,30 @@
+pkgname=g4bri3l-dwm
+pkgver=1.0
+pkgrel=1
+pkgdesc="my build of dwm"
+arch=('any')
+url="https://github.com/g4bri3lDev/dwm"
+license=('MIT')
+depends=(
+	libx11
+	libxft
+	libxinerama
+	st
+	dmenu
+)
+makedepends=('git')
+provides=('dwm')
+conflicts=('dwm')
+source=("git+https://github.com/g4bri3lDev/dmenu")
+sha256sums=("SKIP")
+
+build() {
+	cd dwm
+	make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
+}
+package() {
+	cd dwm
+	mkdir -p ${pkgdir}/opt/${pkgname}
+	cp -rf * ${pkgdir}/opt/${pkgname}
+	make PREFIX=/usr DESTDIR="${pkgdir}" install
+}
