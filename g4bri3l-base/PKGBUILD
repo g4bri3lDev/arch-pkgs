@@ -7,8 +7,7 @@ url='https://g4bri3l.de/arch-pkgs'
 license=('MIT')
 depends=(
 	pacman-contrib
-	base-devel
-	dhcpd
+	dhcpcd
 	xdg-user-dirs
 	wget
 	arandr
