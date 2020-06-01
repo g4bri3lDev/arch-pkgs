@@ -19,4 +19,5 @@ depends=(
 	cava
 	spotify
 	spicetify-cli
+	vlc
 )

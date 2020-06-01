@@ -1,0 +1,17 @@
+
+pkgname=g4bri3l-full
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Full Bundle of packages"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	g4bri3l-base
+	g4bri3l-x
+	g4bri3l-fonts
+	g4bri3l-network
+	g4bri3l-media
+	g4bri3l-office
+	g4bri3l-web
+)
