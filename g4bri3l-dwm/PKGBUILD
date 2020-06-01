@@ -15,7 +15,7 @@ depends=(
 makedepends=('git')
 provides=('dwm')
 conflicts=('dwm')
-source=("git+https://github.com/g4bri3lDev/dmenu")
+source=("git+https://github.com/g4bri3lDev/dwm")
 sha256sums=("SKIP")
 
 build() {

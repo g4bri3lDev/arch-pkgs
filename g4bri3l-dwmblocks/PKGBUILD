@@ -1,0 +1,32 @@
+pkgname=g4bri3l-dwmblocks
+pkgver=1.0
+pkgrel=1
+pkgdesc="my build of dwmblocks"
+arch=('any')
+url="https://github.com/g4bri3lDev/dwmblocks"
+license=('MIT')
+depends=(
+	libx11
+	dwm
+	pacman-contrib
+	networkmanager
+	pulseaudio
+	pulseaudio-alsa
+	alsa-utils
+)
+makedepends=('git')
+provides=('dwmblocks')
+conflicts=('dwmblocks')
+source=("git+https://github.com/g4bri3lDev/dwmblocks")
+sha256sums=("SKIP")
+
+build() {
+	cd dwmblocks
+	make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
+}
+package() {
+	cd dwmblocks
+	mkdir -p ${pkgdir}/opt/${pkgname}
+	cp -rf * ${pkgdir}/opt/${pkgname}
+	make PREFIX=/usr DESTDIR="${pkgdir}" install
+}

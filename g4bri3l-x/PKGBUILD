@@ -23,5 +23,8 @@ depends=(
 	gtk-theme-arc-gruvbox-git
 	dunst
 	libnotify
+	g4bri3l-st
+	g4bri3l-dwm
+	g4bri3l-dmenu
 )
 
