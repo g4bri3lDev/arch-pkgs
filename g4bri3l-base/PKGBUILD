@@ -24,7 +24,6 @@ depends=(
 	unrar
 	unzip
 	highlight
-	xorg-xbacklight
 	zsh
 	zsh-fast-syntax-highlighting
 	simple-mtpfs-git
