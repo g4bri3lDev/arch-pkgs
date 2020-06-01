@@ -9,7 +9,6 @@ depends=(
 	g4bri3l-base
 	xorg-server
 	xorg-server-devel
-	xorg-xwinfo
 	xorg-xinit
 	xorg-xprop
 	xorg-xdpyinfo
