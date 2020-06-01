@@ -4,7 +4,7 @@ all::
 	rm -rf git
 	mkdir aur
 	cd aur && cat ../aur-packages.conf | xargs yay -G
-	find . -type f -name PKGBUILD -execdir makepkg -d -s -f --noconfirm \;
+	find . -type f -name PKGBUILD -execdir makepkg -d -s -f --noconfirm --skippgpcheck \;
 	mkdir public -p
 	cp **/*.tar.xz public -n
 	cd aur && cp **/*.tar.xz ../public -n
