@@ -1,5 +1,5 @@
 pkgname=g4bri3l-fonts
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 pkgdesc="Additional font packages"
 arch=('any')
@@ -10,7 +10,7 @@ depends=(
 	g4bri3l-x
 	ttf-linux-libertine
 	ttf-fira-sans
-	ttf-inconsolata
+	ttf-jetbrains-mono
 	noto-fonts-emoji
 	ttf-joypixels
 	ttf-liberation
