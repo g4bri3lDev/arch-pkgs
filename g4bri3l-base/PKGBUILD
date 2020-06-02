@@ -7,8 +7,7 @@ url='https://g4bri3l.de/arch-pkgs'
 license=('MIT')
 depends=(
 	pacman-contrib
-	base-devel
-	dhcpd
+	dhcpcd
 	xdg-user-dirs
 	wget
 	arandr
@@ -24,14 +23,9 @@ depends=(
 	unrar
 	unzip
 	highlight
-	xorg-xbacklight
 	zsh
 	zsh-fast-syntax-highlighting
 	simple-mtpfs-git
 	yay
 	python
-	)
-
-post_install() {
-
-}
+)
