@@ -1,5 +1,5 @@
 pkgname=g4bri3l-base
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 pkgdesc="Base installation"
 arch=('any')
