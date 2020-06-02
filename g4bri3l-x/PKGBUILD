@@ -27,5 +27,6 @@ depends=(
 	g4bri3l-dwm
 	g4bri3l-dmenu
 	g4bri3l-dwmblocks
+	python-pywal
 	)
 

@@ -29,6 +29,7 @@ depends=(
 	zsh-fast-syntax-highlighting
 	simple-mtpfs-git
 	yay
+	python
 	)
 
 post_install() {
