@@ -1,5 +1,5 @@
 pkgname=g4bri3l-x
-pkgver=0.0.2
+pkgver=0.0.3
 pkgrel=1
 pkgdesc="Additional Packages for X and Window Manager"
 arch=('any')
@@ -27,5 +27,6 @@ depends=(
 	g4bri3l-dmenu
 	g4bri3l-dwmblocks
 	python-pywal
+	vifm
 	)
 
