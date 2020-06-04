@@ -1,0 +1,11 @@
+pkgname=g4bri3l-laptop
+pkgver=0.01
+pkgrel=1
+pkgdesc="Additional Laptop Packages"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	xorg-xbacklight
+	xf86-input-libinput
+)

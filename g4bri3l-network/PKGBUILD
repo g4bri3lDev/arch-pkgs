@@ -1,5 +1,5 @@
 pkgname=g4bri3l-network
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 pkgdesc="Additional networking packages"
 arch=('any')
@@ -12,7 +12,6 @@ depends=(
 	networkmanager-openvpn
 	networkmanager-pptp
 	networkmanager-vpnc
-	network-manager-applet
 	strongswan
 	wpa_supplicant
 )

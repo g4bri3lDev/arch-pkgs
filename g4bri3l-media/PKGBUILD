@@ -1,5 +1,5 @@
 pkgname=g4bri3l-media
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 pkgdesc="Additional media packages"
 arch=('any')
@@ -20,4 +20,5 @@ depends=(
 	spotify
 	spicetify-cli
 	vlc
+	playerctl
 )

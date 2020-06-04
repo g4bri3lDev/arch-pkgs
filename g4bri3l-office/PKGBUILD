@@ -1,5 +1,5 @@
 pkgname=g4bri3l-office
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 pkgdesc="Additional office packages"
 arch=('any')
@@ -14,4 +14,5 @@ depends=(
 	poppler
 	sc-im
 	xournalpp
+	bc
 )
