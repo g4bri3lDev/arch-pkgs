@@ -1,0 +1,13 @@
+pkgname=g4bri3l-webdev
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="packages for webdev"
+arch=('any')
+url='https://g4bri3l.de/arch-pkgs'
+license=('MIT')
+depends=(
+	nodejs
+	npm
+	yarn
+	webstorm-jre
+)
