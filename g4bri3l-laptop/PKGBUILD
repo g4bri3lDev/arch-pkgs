@@ -1,11 +1,16 @@
 pkgname=g4bri3l-laptop
-pkgver=0.01
+pkgver=0.2
 pkgrel=1
 pkgdesc="Additional Laptop Packages"
 arch=('any')
 url='https://g4bri3l.de/arch-pkgs'
 license=('MIT')
 depends=(
+	g4bri3l-base
+	g4bri3l-x
 	xorg-xbacklight
 	xf86-input-libinput
+	xf86-input-wacom
+	bluez
+	bluez-utils
 )
