@@ -1,5 +1,5 @@
 pkgname=g4bri3l-dwmblocks
-pkgver=1.0.4
+pkgver=1.0.5
 pkgrel=1
 pkgdesc="my build of dwmblocks"
 arch=('any')
