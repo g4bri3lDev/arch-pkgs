@@ -1,5 +1,5 @@
 pkgname=g4bri3l-x
-pkgver=0.0.6
+pkgver=0.0.7
 pkgrel=1
 pkgdesc="Additional Packages for X and Window Manager"
 arch=('any')
@@ -12,7 +12,7 @@ depends=(
 	xorg-xinit
 	xorg-xprop
 	xorg-xdpyinfo
-	slock
+	g4bri3l-slock
 	picom
 	arandr
 	xwallpaper

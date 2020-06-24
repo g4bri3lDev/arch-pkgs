@@ -1,0 +1,28 @@
+pkgname=g4bri3l-slock
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="my build of slock"
+arch=('any')
+url="https://github.com/g4bri3lDev/slock"
+license=('MIT')
+depends=(
+	freetype2
+	libxft
+	libxinerama
+)
+makedepends=('git')
+provides=('slock')
+conflicts=('slock')
+source=("git+https://github.com/g4bri3lDev/slock")
+sha256sums=("SKIP")
+
+build() {
+	cd slock
+	make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
+}
+package() {
+	cd slock
+	mkdir -p ${pkgdir}/opt/${pkgname}
+	cp -rf * ${pkgdir}/opt/${pkgname}
+	make PREFIX=/usr DESTDIR="${pkgdir}" install
+}
