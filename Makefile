@@ -4,7 +4,7 @@ all::
 	rm -rf git
 	mkdir aur
 #	cd aur && cat ../aur-packages.conf | xargs yay -G
-	cd aur && cat ../aur-packages.conf | xargs -I{} curl "https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h={}" --create-dirs -o {}/PKGBUILD
+	cd aur && cat ../aur-packages.conf | xargs -I{} git clone "https://aur.archlinux.org/{}.git"
 	find . -type f -name PKGBUILD -execdir makepkg -d -s -f --noconfirm --skippgpcheck \;
 	mkdir public -p
 	cp **/*.tar.zst public -n
