@@ -1,5 +1,5 @@
 pkgname=g4bri3l-webdev
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 pkgdesc="packages for webdev"
 arch=('any')
@@ -9,5 +9,5 @@ depends=(
 	nodejs
 	npm
 	yarn
-	webstorm-jre
+	webstorm
 )
