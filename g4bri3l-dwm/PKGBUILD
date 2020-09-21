@@ -1,5 +1,5 @@
 pkgname=g4bri3l-dwm
-pkgver=1.1.2
+pkgver=1.1.3
 pkgrel=1
 pkgdesc="my build of dwm"
 arch=('any')
