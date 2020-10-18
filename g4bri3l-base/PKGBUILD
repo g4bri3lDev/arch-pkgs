@@ -25,7 +25,6 @@ depends=(
 	highlight
 	zsh
 	zsh-fast-syntax-highlighting
-	simple-mtpfs
 	yay
 	python
 )
