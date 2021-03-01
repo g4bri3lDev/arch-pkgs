@@ -5,6 +5,7 @@ all::
 	mkdir aur
 #	cd aur && cat ../aur-packages.conf | xargs yay -G
 	cd aur && cat ../aur-packages.conf | xargs -I{} git clone "https://aur.archlinux.org/{}.git"
+	environment.etc."makepkg.conf".source = "${pkgs.pacman}/etc/makepkg.conf";
 	find . -type f -name PKGBUILD -execdir makepkg -d -s -f --noconfirm --skippgpcheck \;
 	mkdir public -p
 	cp **/*.tar.zst public -n
