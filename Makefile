@@ -6,6 +6,7 @@ all::
 #	cd aur && cat ../aur-packages.conf | xargs yay -G
 	cd aur && cat ../aur-packages.conf | xargs -I{} git clone "https://aur.archlinux.org/{}.git"
 	curl https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/pacman/trunk/makepkg.conf -o makepkg.conf
+	pwd
 	find . -type f -name PKGBUILD -execdir makepkg -d -s -f --config ../makepkg.conf --noconfirm --skippgpcheck \;
 	mkdir public -p
 	cp **/*.tar.zst public -n
