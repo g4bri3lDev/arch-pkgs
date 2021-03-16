@@ -12,7 +12,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Make all
-        uses: g4bri3lDev/arch-make-action@v1.24
+        uses: g4bri3lDev/arch-make-action@v1.25
       - name: push to webserver
         uses: isthatcentered/dist-to-ftp@v1
         with:
