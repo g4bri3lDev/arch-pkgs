@@ -13,7 +13,7 @@ all::
 	cd aur && cp **/*.tar.zst ../public -n
 	repo-add public/g4bri3l.db.tar.gz public/*.pkg.tar.zst
 	cd public && tree -H '.' -L 1 --noreport --charset utf-8 > index.html
-	sed -i 's/<\/style>/<\/style>\n<script async src="https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-113478083-1"><\/script>\n<\/script>\n\twindow.dataLayer = window.dataLayer \|\| [];\n\tfunction gtag(){dataLayer.push(arguments);}\n\tgtag('js', new Date());\n\n\tgtag('config', 'UA-113478083-1');\n<\/script>/g' public/index.html
+	sed -i 's/<\/style>/<\/style>\n<script async src="https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-113478083-1"><\/script>\n<\script>\n\twindow.dataLayer = window.dataLayer \|\| [];\n\tfunction gtag(){dataLayer.push(arguments);}\n\tgtag('js', new Date());\n\n\tgtag('config', 'UA-113478083-1');\n<\/script>/g' public/index.html
 clean::
 	rm -rf public
 	rm -rf aur
