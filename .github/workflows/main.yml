@@ -10,18 +10,11 @@ jobs:
         uses: actions/checkout@v2
       - name: Make all
         uses: g4bri3lDev/arch-make-action@v1.24
-      - name: push to webserver
-        uses: isthatcentered/dist-to-ftp@v1
+      - name: FTP Deployment
+        uses: airvzxf/ftp-deployment-action@latest
         with:
-          # Ftp user
+          server: ${{ secrets.FTP_HOST }}
           user: ${{ secrets.FTP_USER }}
-          # Ftp password
           password: ${{ secrets.FTP_PASSWORD }}
-          # FTP host url
-          host: ${{ secrets.FTP_HOST }}
-          # Path to your build folder (usually ./dist or ./public)
-          path: ./public
-          # Where to place the files in your ftp
-          into: .
-          # Remove existing file inside FTP destination folder
-          cleanupExisting: true
+          local_dir: "./public"
+          delete: true
