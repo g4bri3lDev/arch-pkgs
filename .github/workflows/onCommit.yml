@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.SFTP_PASSWORD }}
           localDir: ./public
           remoteDir: ${{ secrets.SFTP_PATH }}
-          dryRun: true
+          dryRun: false
           
       
      #   uses: isthatcentered/dist-to-ftp@v1
