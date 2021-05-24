@@ -11,11 +11,17 @@ jobs:
       - name: Make all
         uses: g4bri3lDev/arch-make-action@v1.24
       - name: push to webserver
-        uses: wangyucode/sftp-upload-action@v1.1
+        uses: isthatcentered/dist-to-ftp@v1
         with:
-          host:  ${{ secrets.SFTP_HOST }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
-          localDir: ./public
-          remoteDir: ${{ secrets.SFTP_PATH }}
-          dryRun: false
+          # Ftp user
+          user: ${{ secrets.FTP_USER }}
+          # Ftp password
+          password: ${{ secrets.FTP_PASSWORD }}
+          ## FTP host url
+          host: ${{ secrets.FTP_HOST }}
+          ## Path to your build folder (usually ./dist or ./public)
+          path: ./public
+          # Where to place the files in your ftp
+          into: .
+          # Remove existing file inside FTP destination folder
+          cleanupExisting: true
